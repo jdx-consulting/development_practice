@@ -7,8 +7,9 @@ Binary search looks for a particular item by comparing the middle most item of t
 
 ## Challenge
 
-> Please deliver a __binary search__ solution in a language of your choice.
-> Your solution must include deterministic unit tests, for a constant array of items, demonstrating that your search works (including returning -1 if the search items does not exist).
+Please deliver a __binary search__ solution in a language of your choice.
+- Your solution must include deterministic unit tests, for a constant array of items, demonstrating that your search works (including returning -1 if the search items does not exist).
+- Commit your solution in a personal sub-folder (e.g. development_practice/coding_challenges/week1/matt), ideally such that anyone could download and run (the unit test(s)) locally.
 
 ## How Binary Search Works?
 
