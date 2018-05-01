@@ -1,4 +1,4 @@
-If you have a Python IDE use that to run this code or follow Tims instructions below (below)
+If you have a Python IDE use that to run this code or follow Tims instructions below
 
 Quickstart:
 
