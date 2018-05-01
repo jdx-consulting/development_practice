@@ -8,7 +8,8 @@ To check Python has correctly installed, type py -V into Terminal/Command prompt
 
 To run the program, type
 
-py [path of binary_search.py - e.g. "C:\development_practice\coding_challenges\week1\Saman\Binary_Win.py"] OR py [path of binary_search.py - e.g. "C:\development_practice\coding_challenges\week1\Saman\Binary_Fail.py"]
+py [path of binary_search.py - e.g. "C:\development_practice\coding_challenges\week1\Saman\binary_win.py"] OR 
+py [path of binary_search.py - e.g. "C:\development_practice\coding_challenges\week1\Saman\binary_fail.py"]
 
 -------------------Thanks Tim--------------------
 
