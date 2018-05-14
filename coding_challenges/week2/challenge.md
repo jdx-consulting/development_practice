@@ -5,14 +5,14 @@
 The objective of the challenge this week is to deliver a sorted array of integer values using an in-place [maxHeap](http://btechsmartclass.com/DS/U3_T7.html) sorting algorithm.
 
 You should:
-* Build a maxHeap from an input of 100,000 (_SIZE_) random integers, using _heapify_ so that it has the largest integer as the root and all child nodes conform to the principles of a maxHeap. You will need to use an integer array to hold the maxHeap, see notes below for guidance on how this can be implemented.
-* Set the end position of the sort range: `_POS_ = _SIZE_ - 1`
+* Build a maxHeap from an input of 100,000 `SIZE` random integers, using _heapify_ so that it has the largest integer as the root and all child nodes conform to the principles of a maxHeap. You will need to use an integer array to hold the maxHeap, see notes below for guidance on how this can be implemented.
+* Set the end position of the sort range: `POS = SIZE - 1`
 * Repeat the following until the array is sorted in ascending order:
-  * Swap the root node (largest integer) with the end node (ie the node at position _POS_).
-  * Decrement the range under sort `_POS_--`.
+  * Swap the root node (largest integer) with the end node (ie the node at position `POS`).
+  * Decrement the range under sort `POS--`.
   * Trickle the _new_ root node down to its correct position in the maxHeap, ie where its parent node is larger and both its child nodes are smaller.
-  * This will result in the root node again being the largest integer in the sort range (remember that the previous largest was moved to the end of the array, and the sort range _POS_ reduced by 1).
-* Once the _POS_ value is zero the array will be sorted.
+  * This will result in the root node again being the largest integer in the sort range (remember that the previous largest was moved to the end of the array, and the sort range `POS` reduced by 1).
+* Once the `POS` value is zero the array will be sorted.
 
 
 ### Notes
