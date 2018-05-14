@@ -1,2 +1,10 @@
-# development_practice
-Tech Consultancy - Development Practice
+# Development Practice (Technology Consulting)
+
+## Objectives
+
+### Internal
+
+### External
+
+
+
