@@ -17,7 +17,7 @@ You should:
 
 ### Notes
 
-In this [sort](https://en.wikipedia.org/wiki/Heapsort) you essentially start with a maxHeap held in the full length of the array, as the sort progresses the array is split between a maxHeap in the botton section, and a sorted list of integers in the top section. Each iteration the bottom section is reduced in size, and the top section increased commensurately, until ultimately the entire array is a sorted list of integers and the maxHeap has been reduced down to nothing.
+In this [sort](https://en.wikipedia.org/wiki/Heapsort) you essentially start with a maxHeap held in the full length of the array, as the sort progresses the array is split between a maxHeap in the first section, and a sorted list of integers in the second section. Each iteration the first section is reduced in size, and the second section increased commensurately as the current max value in the heap is picked off and moved across, until ultimately the entire array is a sorted list of integers and the maxHeap has been reduced down to nothing.
 
 Heap Sort overview @ https://en.wikipedia.org/wiki/Heapsort
 
