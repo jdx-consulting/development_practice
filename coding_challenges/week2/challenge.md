@@ -5,7 +5,8 @@
 The objective of the challenge this week is to deliver a sorted array of integer values using an in-place [maxHeap](http://btechsmartclass.com/DS/U3_T7.html) sorting algorithm.
 
 You should:
-* Build a maxHeap from an input of 100,000 `SIZE` random integers, using _heapify_ so that it has the largest integer as the root and all child nodes conform to the principles of a maxHeap. You will need to use an integer array to hold the maxHeap, see notes below for guidance on how this can be implemented.
+* Build a maxHeap of 100,000 random integers, using _heapify_ so that it has the largest integer as the root and all child nodes conform to the principles of a maxHeap. 
+* You will need to use an integer array to hold the maxHeap, see notes below for guidance on how this can be implemented. The length of the array, ie 100,000, is the initial `SIZE`
 * Set the end position of the sort range: `POS = SIZE - 1`
 * Repeat the following until the array is sorted in ascending order:
   * Swap the root node (largest integer) with the end node (ie the node at position `POS`).
