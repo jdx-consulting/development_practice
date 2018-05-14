@@ -1,18 +1,32 @@
 # Software Delivery Practice
 
-## Heap Sort
+## [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)
 
-The objective of the challenge this week is to deliver a sorted array of integer values using a minHeap as the sorting algorithm.
+The objective of the challenge this week is to deliver a sorted array of integer values using an in-place [maxHeap](http://btechsmartclass.com/DS/U3_T7.html) sorting algorithm.
 
 You should:
-1. Build an unsorted array of random integers. This source array should be 100,000 elements in size.
-2. Create an empty target array of the same size.
-3. Build a minHeap from the source array, using _heapify_ so that it has the smallest integer as the root.
-4. Remove the root (minimum) element from the minHeap and place it in position 0 in the target array.
-5. Run _heapify_ on the minHeap, so that the next smallest value becomes the root element.
-6. Remove the root (minimum) element from the minHeap and place it in (next) position 1 in the target array.
-7. Run _heapify_ on the minHeap, so that the next smallest value becomes the root element.
-8. Repeat 6 and 7 until the minHeap is empty, and the target array is fully populated and in order.
+* Build a maxHeap from an input of 100,000 (_SIZE_) random integers, using _heapify_ so that it has the largest integer as the root and all child nodes conform to the principles of a maxHeap. You will need to use an integer array to hold the maxHeap, see notes below for guidance on how this can be implemented.
+* Set the end position of the sort range: `_POS_ = _SIZE_ - 1`
+* Repeat the following until the array is sorted in ascending order:
+  * Swap the root node (largest integer) with the end node (ie the node at position _POS_).
+  * Decrement the range under sort `_POS_--`.
+  * Trickle the _new_ root node down to its correct position in the maxHeap, ie where its parent node is larger and both its child nodes are smaller.
+  * This will result in the root node again being the largest integer in the sort range (remember that the previous largest was moved to the end of the array, and the sort range _POS_ reduced by 1).
+* Once the _POS_ value is zero the array will be sorted.
 
 
+### Notes
 
+In this [sort](https://en.wikipedia.org/wiki/Heapsort) you essentially start with a maxHeap held in the full length of the array, as the sort progresses the array is split between a maxHeap in the botton section, and a sorted list of integers in the top section. Each iteration the bottom section is reduced in size, and the top section increased commensurately, until ultimately the entire array is a sorted list of integers and the maxHeap has been reduced down to nothing.
+
+Heap Sort overview @ https://en.wikipedia.org/wiki/Heapsort
+
+Max Heap overview @ http://btechsmartclass.com/DS/U3_T7.html
+
+A maxHeap can be held in an array using the following indexing rules:
+
+Let n be the number of elements in the heap and i be an arbitrary valid index of the array storing the heap. If the tree root is at index 0, with valid indices 0 through n − 1, then each element a at index __i__ has:
+
+Left child index = `2i + 1`
+Right child index = `2i + 2`
+Parent index = `floor((i − 1) ∕ 2)`
