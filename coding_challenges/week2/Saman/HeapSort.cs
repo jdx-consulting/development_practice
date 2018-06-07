@@ -24,7 +24,7 @@ namespace HeapSortCode
         {
             int temp;
 
-            int listLength = 10000000;
+            int listLength = 100000;
             List<int> someList = RandomList(listLength, 0, listLength);
 
             Console.WriteLine("Random list of {0} integers created", listLength);
@@ -35,6 +35,9 @@ namespace HeapSortCode
             DateTime heapTime;
             DateTime startTime = DateTime.Now;
 
+            someList.Sort();
+
+            /*
             //sort the list into a max heap
             for (int i = listLength / 2 - 1; i >= 0; --i)
                 Heapify(ref someList, i, listLength);
@@ -55,6 +58,7 @@ namespace HeapSortCode
                 //re-heap list
                 Heapify(ref someList, 0, listLength);
             }
+            */
 
             endTime = DateTime.Now;
             timeTaken = (endTime - startTime).TotalSeconds;
