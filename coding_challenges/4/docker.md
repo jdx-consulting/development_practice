@@ -14,7 +14,7 @@ Containers are an abstraction at the app layer that packages code and dependenci
 ## Challenge ##
 
 Build a containerised solution consisting of 2 services.
-Use a coding language that has dependencies (e.g. .net framework, Java runtime ...).
+Use ```Kotlin``` as the development language.
 
 * Service 1 - ```Ping```
   * Periodically pings the Pong service with a simple text string ```PING```.
